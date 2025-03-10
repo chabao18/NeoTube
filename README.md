@@ -1,7 +1,7 @@
 ## progress
 ### 01 Setup
 
-- Nodejs, bun
+- nodejs, bun
 - shadcn ui
 
 ### 02 Basic Layout
@@ -12,9 +12,14 @@
 
 ### 03 Authentication
 
-- Clerk
+- clerk
 
 ### 04 Database Setup
 
-- Neon (postgresql online)
+- neon (postgresql online)
 - DrizzleROM
+
+### 05 Webhook
+- ngrok: static ip -> localhost
+- bun add concurrently: run app & ngrok tunnel
+- clerk users webhook
