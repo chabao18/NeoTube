@@ -28,3 +28,8 @@
 - trpc: https://trpc.io/docs/client/react/server-components 
   - prefetch data on server side
 
+### 07 trpc configuration
+- transformer
+- add auth to rRPC context
+- add protectedProcedure
+- add rate limiting (upstash redis)
