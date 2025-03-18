@@ -7,9 +7,9 @@ import { UserCircleIcon } from "lucide-react";
 export const AuthButton = () => {
   return (
     <>
-    <SignedIn>
-      <UserButton />
-    </SignedIn>
+      <SignedIn>
+        <UserButton />
+      </SignedIn>
       <SignedOut>
         <SignInButton mode="modal">
           <Button
