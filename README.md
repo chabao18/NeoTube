@@ -24,12 +24,17 @@
 - bun add concurrently: run app & ngrok tunnel
 - clerk users webhook
 
-### 06 trpc Setup
+### 06 Trpc Setup
 - trpc: https://trpc.io/docs/client/react/server-components 
   - prefetch data on server side
 
-### 07 trpc configuration
+### 07 Trpc configuration
 - transformer
 - add auth to rRPC context
 - add protectedProcedure
 - add rate limiting (upstash redis)
+
+### 08 Video categories
+
+### 09 studio layout
+todo
