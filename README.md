@@ -41,3 +41,8 @@
 
 ### 10 Studio Videos
 - drizzle-orm relations
+
+### 11 Infinite Loading
+
+### 12 Mux Integration
+todo: 6:07
