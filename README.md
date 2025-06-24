@@ -35,6 +35,7 @@
 - add rate limiting (upstash redis)
 
 ### 08 Video categories
+- key component: filter-carousel.tsx
 
 ### 09 studio layout
-todo
+todo: 5.18.20
