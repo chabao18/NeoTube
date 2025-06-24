@@ -28,14 +28,16 @@
 - trpc: https://trpc.io/docs/client/react/server-components 
   - prefetch data on server side
 
-### 07 Trpc configuration
+### 07 Trpc Configuration
 - transformer
 - add auth to rRPC context
 - add protectedProcedure
 - add rate limiting (upstash redis)
 
-### 08 Video categories
+### 08 Video Categories
 - key component: filter-carousel.tsx
 
-### 09 studio layout
-todo: 5.18.20
+### 09 Studio Layout
+
+### 10 Studio Videos
+- drizzle-orm relations
