@@ -50,4 +50,8 @@
 
 ### 14 Video Form
 
-### 15 todo
+### 15 Video thumbnails
+
+### 16 AI background jobs
+- upstash workflow
+todo 10:50:07
