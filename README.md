@@ -53,5 +53,10 @@
 ### 15 Video thumbnails
 
 ### 16 AI background jobs
-- upstash workflow
-todo 10:50:07
+
+### 17 AI thumbnail
+
+### 18 Video page
+
+### 19 Video views
+todo: 1:05:32
