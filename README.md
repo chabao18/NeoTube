@@ -61,4 +61,6 @@
 ### 19 Video views
 
 ### 20 video reactions
-todo: 1:24:46
+
+### 21 subscriptions
+todo: 

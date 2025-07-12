@@ -22,7 +22,7 @@ export const VideoReactions = ({
 }: VideoReacionsProps) => {
   const clerk = useClerk();
   const utils = trpc.useUtils();
-  const like = trpc.VideoReacions.like.useMutation({
+  const like = trpc.videoReacions.like.useMutation({
     onSuccess: () => {
       utils.videos.getOne.invalidate({ id: videoId });
     },
@@ -33,7 +33,7 @@ export const VideoReactions = ({
       }
     },
   });
-  const dislike = trpc.VideoReacions.dislike.useMutation({
+  const dislike = trpc.videoReacions.dislike.useMutation({
     onSuccess: () => {
       utils.videos.getOne.invalidate({ id: videoId });
     },
