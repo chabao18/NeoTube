@@ -259,7 +259,7 @@ export const commentRelations = relations(comments, ({ one, many }) => ({
     relationName: "comments_parent_id_fkey",
   }),
   reactions: many(commentReactions),
-  replies: many(commentReactions, {
+  replies: many(comments, {
     relationName: "comments_parent_id_fkey",
   }),
 }));

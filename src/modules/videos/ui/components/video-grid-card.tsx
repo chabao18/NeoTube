@@ -1,7 +1,7 @@
 import { cva, VariantProps } from "class-variance-authority";
 import { VideoGetManyOutput } from "../../types";
 import Link from "next/link";
-import { VideoThumbnail } from "./video-thumbnail";
+import { VideoThumbnail, VideoThumbnailSkeleton } from "./video-thumbnail";
 import { cn } from "@/lib/utils";
 import { UserAvatar } from "@/components/user-avatar";
 import { UserInfo } from "@/modules/user/ui/components/user-info";
@@ -12,7 +12,7 @@ import {
 } from "@/components/ui/tooltip";
 import { VideoMenu } from "./video-menu";
 import { useMemo } from "react";
-import { VideoInfo } from "./video-info";
+import { VideoInfo, VideoInfoSkeleton } from "./video-info";
 import { on } from "events";
 
 interface VideoGridCardProps {
@@ -20,8 +20,13 @@ interface VideoGridCardProps {
   onRemove?: () => void;
 }
 
-export const VideoRowCardSkeleton = () => {
-  return <div>Skeleton</div>;
+export const VideoGridCardSkeleton = () => {
+  return (
+    <div className="flex flex-col gap-2 w-full">
+      <VideoThumbnailSkeleton />
+      <VideoInfoSkeleton />
+    </div>
+  );
 };
 
 export const VideoGridCard = ({ data, onRemove }: VideoGridCardProps) => {
