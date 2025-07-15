@@ -62,7 +62,7 @@ export const VideoRowCardSkeleton = ({
                 <Skeleton className="h-4 w-[20%] mt-1" />
                 <div className="flex items-center gap-2 my-3">
                   <Skeleton className="size-8 rounded-full" />
-                  <Skeleton className="h-4 w-24" />7
+                  <Skeleton className="h-4 w-24" />
                 </div>
               </>
             )}

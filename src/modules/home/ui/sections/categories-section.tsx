@@ -7,20 +7,20 @@ import { FilterCarousel } from "@/components/filter-carousel";
 import { useRouter } from "next/navigation";
 
 interface CategoriesSectionProps {
-  categortId?: string;
+  categoryId?: string;
 }
 
-export const CategoriesSection = ({ categortId }: CategoriesSectionProps) => {
+export const CategoriesSection = ({ categoryId }: CategoriesSectionProps) => {
   return (
     <Suspense fallback={<CategoriesSkeleton />}>
       <ErrorBoundary fallback={<p>Error...</p>}>
-        <CategoriesSectionSuspense categortId={categortId} />
+        <CategoriesSectionSuspense categoryId={categoryId} />
       </ErrorBoundary>
     </Suspense>
   );
 };
 
-const CategoriesSectionSuspense = ({ categortId }: CategoriesSectionProps) => {
+const CategoriesSectionSuspense = ({ categoryId }: CategoriesSectionProps) => {
   const router = useRouter();
   const [categories] = trpc.categories.getMany.useSuspenseQuery();
   const data = categories.map(({ name, id }) => ({
@@ -44,7 +44,7 @@ const CategoriesSectionSuspense = ({ categortId }: CategoriesSectionProps) => {
     <div>
       <FilterCarousel
         onSelect={onSelect}
-        value={categortId}
+        value={categoryId}
         data={data}
       />
     </div>
