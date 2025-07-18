@@ -1,68 +1,63 @@
-## progress
-### 01 Setup
+# NeoTube
 
-- nodejs, bun
-- shadcn ui
+![](assets/neotube.png)
 
-### 02 Basic Layout
+A full-featured YouTube-inspired platform built with modern web technologies and enhanced by powerful AI integrations. This project replicates core YouTube functionalities while introducing smart, AI-driven jobs for a next-gen video experience.
 
-- logo asset
-- app router folders
-- sidebar & navbar
+## Tech Stack
 
-### 03 Authentication
+- **Framework:** Next.js 15, React 19, tRPC
+- **Styling:** TailwindCSS, ShadcnUI
+- **Database:** PostgreSQL (Neon) with DrizzleORM
+- **Video Infrastructure:** Mux
 
-- clerk: https://dashboard.clerk.com/apps/app_2u3sA1Fz8ICgZyGJYopVSgwYOeJ/instances/ins_2u3s9xBe4teLDxgpcD9kVcQcCE1
+## Key Features
 
-### 04 Database Setup
+🎬 **Real-Time Video Processing** – Powered by Mux for fast uploads & streaming
 
-- neon (postgresql online): https://console.neon.tech/app/projects/lively-frog-73977286?database=neo_tube
-- DrizzleROM
+📝 **Auto Transcription** – AI-generated transcripts for uploaded videos
 
-### 05 Webhook
-- ngrok: static ip -> localhost: https://dashboard.ngrok.com/get-started/setup/macos
-- bun add concurrently: run app & ngrok tunnel
-- clerk users webhook
+🤖 **AI-Powered Content** – Automatic title & description suggestions
 
-### 06 Trpc Setup
-- trpc: https://trpc.io/docs/client/react/server-components 
-  - prefetch data on server side
+⚡ **Dynamic Feeds** – Personalized and trending content feeds
 
-### 07 Trpc Configuration
-- transformer
-- add auth to rRPC context
-- add protectedProcedure
-- add rate limiting (upstash redis)
+🗂️ **Playlist Management** – Custom playlists for users
 
-### 08 Video Categories
-- key component: filter-carousel.tsx
+💬 **Comment System** – Engage with interactive comments
 
-### 09 Studio Layout
+👍 **Likes & Subscriptions** – Support for engagement and follow  
 
-### 10 Studio Videos
-- drizzle-orm relations
+🎯 **Watch History** – Tracks and resumes viewed content  
 
-### 11 Infinite Loading
+## Quick Start
 
-### 12 Mux Integration
+1. **Clone the repository:**
 
-### 13 Mux Webhooks
+```bash
+git clone https://github.com/chabao18/NeoTube.git
+```
 
-### 14 Video Form
+2. **Install dependencies:**
 
-### 15 Video thumbnails
+```bash
+cd NeoTube
+pnpm install
+```
 
-### 16 AI background jobs
+3. **Set up environment variables:**
 
-### 17 AI thumbnail
+```bash
+cp .env.example .env.local
+# Fill in the required credentials
+```
 
-### 18 Video page
+4. **Run the app:**
 
-### 19 Video views
+```bash
+pnpm dev
+```
 
-### 20 video reactions
+## License
 
-### 21 subscriptions
+This project is licensed under the [MIT License](./LICENSE).
 
-### 22 comments
-todo: 6:08
