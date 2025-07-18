@@ -40,6 +40,8 @@ export const PlaylistAddModal = ({
       toast.success("Video added to playlist");
       utils.playlist.getMany.invalidate();
       utils.playlist.getManyForVideo.invalidate({ videoId });
+      utils.playlist.getOne.invalidate({ id: data.playlistId });
+      utils.playlist.getVideos.invalidate({ playlistId: data.playlistId });
     },
 
     onError: () => {
@@ -48,10 +50,12 @@ export const PlaylistAddModal = ({
   });
 
   const removeVideo = trpc.playlist.removeVideo.useMutation({
-    onSuccess: () => {
+    onSuccess: (data) => {
       toast.success("Video removed from playlist");
       utils.playlist.getMany.invalidate();
       utils.playlist.getManyForVideo.invalidate({ videoId });
+      utils.playlist.getOne.invalidate({ id: data.playlistId });
+      utils.playlist.getVideos.invalidate({ playlistId: data.playlistId });
     },
 
     onError: () => {
@@ -65,10 +69,10 @@ export const PlaylistAddModal = ({
       open={open}
       onOpenChange={onOpenChange}
     >
-      <div className="flex fc gap-2">
+      <div className="flex flex-col gap-2">
         {isLoading && (
           <div className="flex justify-center p-4">
-            <Loader2Icon className="size-5 animate-spin to-muted-foreground" />
+            <Loader2Icon className="size-5 animate-spin text-muted-foreground" />
           </div>
         )}
         {!isLoading &&
